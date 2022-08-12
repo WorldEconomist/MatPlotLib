@@ -23,3 +23,33 @@ ax.set_xlabel('axis X')
 plt.legend(loc='best')
 ax.grid(color='black', lw='0.5', ls='--', which='major')
 plt.show()
+
+
+# fig, axes = plt.subplots(1, 2)    #bar
+# axes[0].bar([1, 2, 3, 4], [4, 2, 1, 5], color='black', label='vertical', alpha=1)
+# axes[1].barh([0.5, 1, 2.5], [0, 1, 2], color='red', label='horizontal')
+# axes[0].legend()
+# axes[1].legend()
+# plt.show()
+
+# fig = plt.figure(figsize=(14,10)) #Stacked
+# rect1 = plt.bar(np.arange(5), np.arange(5)**2,width = 0.3, color = 'red')
+# rect2 = plt.bar(np.arange(5), np.arange(5)*2, width = 0.3, color = 'black')
+# plt.legend((rect1[0], rect2[1]), ('support', 'freedom'))
+# plt.grid(c='black')
+# plt.show()
+
+# fig, ax = plt.subplots() #hist boxplot
+# np.random.seed(196868)
+# mu, sigma = 100, 15
+# x = mu + sigma * np.random.randn(10000)
+# ax.hist(x, 50, density = True, facecolor = 'blue', alpha = 0.75)
+# ax.grid(color= 'black')
+# plt.show()
+
+# fig, ax = plt.subplots() #area chart
+# x = np.arange(0, 100, 1)
+# y = x*2
+# ax.fill_between(x,y,color = 'skyblue', alpha = 0.2)
+# ax.plot(x,y, color = 'slateblue', alpha = 0.6)
+# plt.show()
