@@ -1,2 +1,33 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv('C:\\Users\\Дмитрий\\PycharmProjects\\МатПлотЛиб\\company_sales_data.csv')
+# month_list = df['month_number'].tolist()
+# total_profit = df['total_profit'].tolist()
+# plt.plot(month_list, total_profit, c='green', ls='-.', lw=2.5, marker='o', markersize=10, markerfacecolor = 'white')
+# plt.xticks(month_list)
+# plt.xlabel('Month number')
+# plt.ylabel('Total Profit')
+# plt.title('2020 total profit data', fontweight='bold')
+
+monthlist = df['month_number'].tolist()
+facecreamsales = df['facecream'].tolist()
+facewashsales = df['facewash'].tolist()
+toothpastesales = df['toothpaste'].tolist()
+bathingsoapsales = df['bathingsoap'].tolist()
+shampoosales = df['shampoo'].tolist()
+moisturizersales = df['moisturizer'].tolist()
+plt.plot(monthlist, facecreamsales, label='face cream sales', lw=2, marker='o')
+plt.plot(monthlist, facewashsales, label='facewashsales', lw=2, marker='o')
+plt.plot(monthlist, toothpastesales, label='toothpastesales', lw=2, marker='o')
+plt.plot(monthlist, bathingsoapsales, label='bathingsoapsales', lw=2, marker='o')
+plt.plot(monthlist, shampoosales, label='shampoosales', lw=2, marker='o')
+plt.plot(monthlist, moisturizersales, label='moisturizersales', lw=2, marker='o')
+plt.xticks(monthlist)
+plt.xlabel('Month number', fontsize=15)
+plt.ylabel('Units sold', fontsize=15)
+plt.title('Sales data', fontweight='bold', fontsize=20)
+plt.legend(loc='best')
+plt.grid(c='black', lw=0.2)
+plt.show()
