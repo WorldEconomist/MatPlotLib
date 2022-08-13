@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv('C:\\Users\\Дмитрий\\PycharmProjects\\МатПлотЛиб\\company_sales_data.csv')
+df = pd.read_csv('C:\\Users\\Димон\\PycharmProjects\\МатПлотЛиб\\company_sales_data.csv')
 # month_list = df['month_number'].tolist()
 # total_profit = df['total_profit'].tolist()
 # plt.plot(month_list, total_profit, c='green', ls='-.', lw=2.5, marker='o', markersize=10, markerfacecolor = 'white')
@@ -29,5 +29,5 @@ plt.xlabel('Month number', fontsize=15)
 plt.ylabel('Units sold', fontsize=15)
 plt.title('Sales data', fontweight='bold', fontsize=20)
 plt.legend(loc='best')
-plt.grid(c='black', lw=0.2)
+plt.grid(c='blue', lw=0.2)
 plt.show()
