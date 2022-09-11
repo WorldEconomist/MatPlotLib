@@ -34,4 +34,5 @@ plt.text(x=.83, y=.165, s="""Russia""",
         transform=fig.transFigure, ha='left', fontsize=8, alpha=.9)
 plt.legend(loc='best')
 plt.savefig('GDP.png')
+
 plt.show()
